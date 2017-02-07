@@ -16,13 +16,12 @@ class SynGen < Sinatra::Base
       "the magical sword excalibur", "God incarnate",
       "their boss' daughter, cursed by a witch"]
 
-    condition = ["Mayhem", "Chaos", "Hilarity", "A lovely time", "A horny mess"]
+    condition = ["Mayhem", "Chaos", "Hilarity", "A lovely time"]
 
     impresses = ["dazzles", "stuns", "shines", "effervesces", "delights",
       "shocks the critics", "delivers"]
 
-    termStruggle = ["the size of his butte",
-      "the dissolution of the monastries under Henry VIII",
+    termStruggle = ["the dissolution of the monastries under Henry VIII",
       "the death of his goldfish",
       "a car crash that left him fighting for his life",
       "the enormity of existence"]
@@ -81,8 +80,8 @@ class SynGen < Sinatra::Base
 
     rateStrength = ["mild", "extreme", "partial", "occasional", "constant"]
 
-    rateContent = ["nudity", "peril", "bad language", "blasphemy", "negativity",
-      "showoffery", "threat", "violence", "injury detail", "drug use", "gore",
+    rateContent = ["nudity", "peril", "bad language", "blasphemy", "negativity", 
+      "threat", "violence", "injury detail", "drug use", "gore",
       "material likely to offend", "risky immitable behaviour"]
 
     lifeTurnedUpsideDown = "#{character.sample} (#{actor.sample}) has their life turned upsidedown when they discover that their #{object.sample} is #{surprisingThing.sample}.  #{condition.sample} ensues."
@@ -105,7 +104,7 @@ class SynGen < Sinatra::Base
 
     @rating = "Rated #{ratingCode.sample} for #{rateStrength.sample} #{rateContent.sample}"
 
-    @length = "#{rand(3...607)} mins"
+    @length = "#{rand(3...7)} mins"
 
     erb :index
   end
