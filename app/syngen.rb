@@ -86,7 +86,7 @@ class SynGen < Sinatra::Base
 
     lifeTurnedUpsideDown = "#{character.sample} (#{actor.sample}) has their life turned upsidedown when they discover that their #{object.sample} is #{surprisingThing.sample}.  #{condition.sample} ensues."
 
-    emotionalJourney = "#{actor.sample} #{impresses.sample} in this portrayal of one man's emotional journey as he struggles to come to terms with #{termStruggle.sample}."
+    emotionalJourney = "#{actor.sample} #{impresses.sample} in this portrayal of one man's emotional journey as he struggles to come to terms with #{termStruggle.sample}.  This #{guffNoun.sample} will #{guffperbole.sample}."
 
     aMeetsB = "#{aMeetingAdjective.sample} meeting between #{character.sample} (#{actor.sample}) and #{character.sample} (#{actor.sample}) quickly escalates into one of the greatest romances imaginable.  What follows is #{loveFollowing.sample}."
 
