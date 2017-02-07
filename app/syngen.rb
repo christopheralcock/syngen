@@ -3,8 +3,8 @@ require 'sinatra/base'
 class SynGen < Sinatra::Base
 
   get '/' do
-    character = ["The King's janitor", "A schoolteacher", "A union baron",
-      "A stowaway", "A local artist in residence", "A down-on-their-luck lowlife"]
+    character = ["the King's janitor", "a schoolteacher", "a union baron",
+      "a stowaway", "a local artist-in-residence", "a down-on-their-luck lowlife"]
 
     actor = ["Toby Young", "Toby Jones", "Michael Fassbender",
       "Benedict Cumberbatch", "Alicia Vikander", "Scarlett Johannson"]
