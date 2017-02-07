@@ -104,7 +104,7 @@ class SynGen < Sinatra::Base
 
     @rating = "Rated #{ratingCode.sample} for #{rateStrength.sample} #{rateContent.sample}"
 
-    @length = "#{rand(3...7)} mins"
+    @length = "#{rand(3...207)} mins"
 
     erb :index
   end
